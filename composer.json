@@ -1,0 +1,32 @@
+{
+    "name": "artisanali/laravel-menu",
+    "description": "copy of harimayco/laravel-menu for laravel latest version",
+    "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
+    "authors": [
+    	{
+            "name": "ArtisanAli",
+            "email": "artisanmuhammadali@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+          "ArtisanAli\\Menu\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArtisanAli\\Menu\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "ArtisanAli\\Menu\\Facades\\Menu"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
